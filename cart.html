@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق — Print&Cut</title>
+    <meta name="description" content="راجع سلة التسوق وأكمل طلبك من Print&Cut.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <div class="logo-icon">P&C</div>
+                Print&Cut
+            </a>
+            <nav class="header-nav">
+                <a href="index.html">الرئيسية</a>
+                <a href="products.html">المنتجات</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+            <div class="header-actions">
+                <button class="header-btn cart-btn" id="cart-btn" aria-label="سلة التسوق" onclick="window.location.href='cart.html'">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="hamburger-btn" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html">🏠 الرئيسية</a>
+    <a href="products.html">🛍️ المنتجات</a>
+    <a href="about.html">💚 من نحن</a>
+    <a href="contact.html">📞 تواصل معنا</a>
+</nav>
+
+<main class="page-content">
+    <section class="page-hero" style="padding:50px 0 40px;">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <h1>سلة التسوق</h1>
+            <p>راجع طلبك قبل الإتمام</p>
+        </div>
+    </section>
+
+    <section class="cart-page-section">
+        <div class="container">
+            <div class="cart-page-grid">
+                <!-- Cart Items -->
+                <div class="cart-page-items">
+                    <div class="cart-page-header">
+                        <h2>منتجاتك</h2>
+                    </div>
+                    <div id="cart-page-items-list">
+                        <!-- Rendered by JS -->
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="cart-summary-card" id="cart-page-summary">
+                    <h3>ملخص الطلب</h3>
+                    <div class="cart-totals">
+                        <div class="cart-total-row"><span>المجموع الجزئي</span><span id="page-subtotal">0 EGP</span></div>
+                        <div class="cart-total-row"><span>الشحن</span><span id="page-shipping">50 EGP</span></div>
+                        <div class="cart-total-row"><span>الإجمالي</span><span id="page-total">0 EGP</span></div>
+                    </div>
+                    <a href="checkout.html" class="btn btn-primary" id="checkout-link" style="width:100%;justify-content:center;border-radius:14px;padding:16px;margin-top:20px;display:flex;">
+                        إتمام الطلب ←
+                    </a>
+                    <a href="products.html" class="btn btn-outline" style="width:100%;justify-content:center;border-radius:14px;padding:14px;margin-top:12px;display:flex;">
+                        ← متابعة التسوق
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo"><div class="logo-icon">P&C</div> Print&Cut</div>
+                <p class="slogan">اطبع فكرتك... وخليها حقيقة.</p>
+            </div>
+            <div class="footer-col"><h4>SHOP</h4><ul><li><a href="products.html">المنتجات</a></li></ul></div>
+            <div class="footer-col"><h4>COMPANY</h4><ul><li><a href="about.html">من نحن</a></li><li><a href="contact.html">تواصل معنا</a></li></ul></div>
+            <div class="footer-col"><h4>FOLLOW</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Print&Cut. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    renderCartPage();
+    updateCartCount();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج — Print&Cut</title>
+    <meta name="description" content="اعرف أكتر عن منتجات Print&Cut المخصصة.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+        <h3>سلة التسوق</h3>
+        <button class="cart-close" id="cart-close">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+        <div class="cart-totals">
+            <div class="cart-total-row"><span>المجموع</span><span id="cart-subtotal">0 EGP</span></div>
+            <div class="cart-total-row"><span>الشحن</span><span id="cart-shipping">مجاني</span></div>
+            <div class="cart-total-row"><span>الإجمالي</span><span id="cart-total">0 EGP</span></div>
+        </div>
+        <a href="checkout.html" class="btn btn-primary" style="width:100%;justify-content:center;border-radius:14px;padding:16px;">إتمام الطلب ←</a>
+    </div>
+</aside>
+
+<header class="site-header" id="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <div class="logo-icon">P&C</div>
+                Print&Cut
+            </a>
+            <nav class="header-nav">
+                <a href="index.html">الرئيسية</a>
+                <a href="products.html" class="active">المنتجات</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+            <div class="header-actions">
+                <button class="header-btn" id="search-btn" aria-label="بحث">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </button>
+                <button class="header-btn cart-btn" id="cart-btn" aria-label="سلة التسوق">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="hamburger-btn" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html">🏠 الرئيسية</a>
+    <a href="products.html">🛍️ المنتجات</a>
+    <a href="about.html">💚 من نحن</a>
+    <a href="contact.html">📞 تواصل معنا</a>
+</nav>
+
+<main class="page-content">
+    <section class="product-detail-section">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav style="margin-bottom:36px;font-size:13px;color:var(--text-muted);">
+                <a href="index.html" style="color:var(--text-muted);transition:color 0.2s;">الرئيسية</a>
+                <span style="margin:0 8px;">←</span>
+                <a href="products.html" style="color:var(--text-muted);transition:color 0.2s;">المنتجات</a>
+                <span style="margin:0 8px;">←</span>
+                <span id="breadcrumb-name" style="color:var(--text-dark);font-weight:600;">...</span>
+            </nav>
+
+            <div class="product-detail-grid" id="product-detail-content">
+                <!-- Rendered by JS -->
+                <div style="text-align:center;padding:100px 20px;grid-column:1/-1;">
+                    <div style="font-size:48px;margin-bottom:16px;">⏳</div>
+                    <p style="color:var(--text-muted);">جاري تحميل المنتج...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo"><div class="logo-icon">P&C</div> Print&Cut</div>
+                <p class="slogan">اطبع فكرتك... وخليها حقيقة.</p>
+            </div>
+            <div class="footer-col">
+                <h4>SHOP</h4>
+                <ul>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="products.html?cat=mugs">مجات</a></li>
+                    <li><a href="products.html?cat=frames">براويز</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>FOLLOW</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Print&Cut. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get('id');
+
+    if (!productId) {
+        window.location.href = 'products.html';
+        return;
+    }
+
+    const product = getProductById(productId);
+
+    if (!product) {
+        document.getElementById('product-detail-content').innerHTML = `
+            <div style="text-align:center;padding:100px 20px;grid-column:1/-1;">
+                <div style="font-size:48px;margin-bottom:16px;">😕</div>
+                <h3 style="font-size:22px;font-weight:800;margin-bottom:10px;">المنتج مش موجود</h3>
+                <p style="color:var(--text-muted);margin-bottom:24px;">المنتج اللي بتدور عليه مش موجود</p>
+                <a href="products.html" class="btn btn-primary">العودة للمنتجات</a>
+            </div>
+        `;
+        return;
+    }
+
+    // Update title and breadcrumb
+    document.title = `${product.name} — Print&Cut`;
+    document.getElementById('breadcrumb-name').textContent = product.name;
+
+    let selectedOption = product.options ? product.options[0] : '';
+    let qty = 1;
+    let uploadedFileName = '';
+
+    function render() {
+        document.getElementById('product-detail-content').innerHTML = `
+            <!-- GALLERY -->
+            <div class="product-gallery">
+                <div class="product-main-img" id="main-img-wrap">
+                    <img src="${product.image}" alt="${product.name}" id="main-product-img" width="400">
+                </div>
+                <div class="product-thumbs">
+                    ${product.images.map((img, i) => `
+                        <div class="product-thumb ${i === 0 ? 'active' : ''}" onclick="switchImg('${img}', this)">
+                            <img src="${img}" alt="${product.name} ${i+1}">
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <!-- INFO -->
+            <div class="product-info">
+                <span class="product-detail-category">${product.categoryLabel}</span>
+                <h1 class="product-detail-name">${product.name}</h1>
+                <div class="product-detail-price">
+                    ${product.price.toLocaleString()} <span>جنيه مصري</span>
+                </div>
+                <p class="product-detail-desc">${product.description}</p>
+
+                ${product.options && product.options.length ? `
+                <div class="product-option-group">
+                    <span class="option-label">الاختيارات</span>
+                    <div class="option-buttons" id="option-buttons">
+                        ${product.options.map((opt, i) => `
+                            <button class="option-btn ${i === 0 ? 'active' : ''}" onclick="selectOption('${opt}', this)">${opt}</button>
+                        `).join('')}
+                    </div>
+                </div>` : ''}
+
+                ${product.sizes && product.sizes.length ? `
+                <div class="product-option-group">
+                    <span class="option-label">المقاس</span>
+                    <div class="option-buttons" id="size-buttons">
+                        ${product.sizes.map((s, i) => `
+                            <button class="option-btn ${i === 0 ? 'active' : ''}" onclick="selectSize(this)">${s}</button>
+                        `).join('')}
+                    </div>
+                </div>` : ''}
+
+                <div class="qty-group">
+                    <span class="option-label">الكمية</span>
+                    <div class="qty-control">
+                        <button class="qty-btn" onclick="changeDetailQty(-1)">−</button>
+                        <span class="qty-display" id="detail-qty">1</span>
+                        <button class="qty-btn" onclick="changeDetailQty(1)">+</button>
+                    </div>
+                </div>
+
+                <div class="upload-group">
+                    <span class="option-label">ارفع تصميمك</span>
+                    <label class="upload-area" for="design-upload" id="upload-area">
+                        <span class="upload-icon">📁</span>
+                        <strong id="upload-label">اختار ملف أو ارفع صورة</strong>
+                        <p>PNG, JPG, PDF — حجم أقصى 10MB</p>
+                        <input type="file" id="design-upload" accept="image/*,.pdf" onchange="handleUpload(this)">
+                    </label>
+                </div>
+
+                <button class="add-to-cart-main-btn" id="atc-btn" onclick="handleAddToCart()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    أضف للسلة
+                </button>
+
+                <div style="margin-top:16px;display:flex;gap:14px;flex-wrap:wrap;">
+                    <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);">
+                        <span style="color:var(--primary);">✓</span> شحن خلال 3-5 أيام
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);">
+                        <span style="color:var(--primary);">✓</span> جودة مضمونة
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);">
+                        <span style="color:var(--primary);">✓</span> دعم على واتساب
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    window.switchImg = function(src, el) {
+        document.getElementById('main-product-img').src = src;
+        document.querySelectorAll('.product-thumb').forEach(t => t.classList.remove('active'));
+        el.classList.add('active');
+    };
+
+    window.selectOption = function(opt, el) {
+        selectedOption = opt;
+        document.querySelectorAll('#option-buttons .option-btn').forEach(b => b.classList.remove('active'));
+        el.classList.add('active');
+    };
+
+    window.selectSize = function(el) {
+        document.querySelectorAll('#size-buttons .option-btn').forEach(b => b.classList.remove('active'));
+        el.classList.add('active');
+    };
+
+    window.changeDetailQty = function(delta) {
+        qty = Math.max(1, qty + delta);
+        const qtyEl = document.getElementById('detail-qty');
+        if (qtyEl) qtyEl.textContent = qty;
+    };
+
+    window.handleUpload = function(input) {
+        if (input.files && input.files[0]) {
+            uploadedFileName = input.files[0].name;
+            const label = document.getElementById('upload-label');
+            if (label) label.textContent = `✓ ${uploadedFileName}`;
+            const area = document.getElementById('upload-area');
+            if (area) {
+                area.style.borderColor = 'var(--primary)';
+                area.style.background = 'rgba(52,69,47,0.05)';
+            }
+        }
+    };
+
+    window.handleAddToCart = function() {
+        addToCart(product, selectedOption, qty);
+    };
+
+    render();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن — Print&Cut</title>
+    <meta name="description" content="تعرف على قصة Print&Cut — الاستوديو المصري المتخصص في الطباعة والتخصيص.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+        <h3>سلة التسوق</h3>
+        <button class="cart-close" id="cart-close">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+        <div class="cart-totals">
+            <div class="cart-total-row"><span>المجموع</span><span id="cart-subtotal">0 EGP</span></div>
+            <div class="cart-total-row"><span>الشحن</span><span id="cart-shipping">مجاني</span></div>
+            <div class="cart-total-row"><span>الإجمالي</span><span id="cart-total">0 EGP</span></div>
+        </div>
+        <a href="checkout.html" class="btn btn-primary" style="width:100%;justify-content:center;border-radius:14px;padding:16px;">إتمام الطلب ←</a>
+    </div>
+</aside>
+
+<header class="site-header" id="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <div class="logo-icon">P&C</div>
+                Print&Cut
+            </a>
+            <nav class="header-nav">
+                <a href="index.html">الرئيسية</a>
+                <a href="products.html">المنتجات</a>
+                <a href="about.html" class="active">من نحن</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+            <div class="header-actions">
+                <button class="header-btn" id="search-btn" aria-label="بحث">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </button>
+                <button class="header-btn cart-btn" id="cart-btn" aria-label="سلة التسوق">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="hamburger-btn" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html">🏠 الرئيسية</a>
+    <a href="products.html">🛍️ المنتجات</a>
+    <a href="about.html">💚 من نحن</a>
+    <a href="contact.html">📞 تواصل معنا</a>
+</nav>
+
+<main class="page-content">
+    <section class="about-hero">
+        <div class="page-hero-bg"></div>
+        <h1 class="reveal">من نحن</h1>
+        <p class="reveal reveal-delay-1">براند مصري متخصص في الطباعة والتخصيص بجودة عالية</p>
+    </section>
+
+    <section class="about-content-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h2>بنحوّل أفكارك لحاجة تقدر تمسكها</h2>
+                    <p>
+                        Print&Cut براند مصري متخصص في الطباعة والتخصيص. بدأنا برغبة حقيقية في إن كل حاجة بتطلع من عندنا تكون بجودة عالية وتعبّر عن الشخص اللي طلبها.
+                    </p>
+                    <p>
+                        بنشتغل على مجموعة متنوعة من المنتجات: مجات، استيكرات، براويز، كروت شخصية، ونوت بوك. كل منتج بيتعمل بعناية واهتمام بالتفاصيل، من التصميم لحد التسليم.
+                    </p>
+                    <p>
+                        هدفنا إنك لما تستلم طلبك، تحس إنه بالظبط زي ما كنت متخيله، أو حتى أحسن.
+                    </p>
+                    <a href="products.html" class="btn btn-primary" style="margin-top:8px;">اكتشف منتجاتنا ←</a>
+                </div>
+                <div class="about-visual reveal reveal-delay-2">
+    <img src="images/products/2222.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title reveal">قيمنا</h2>
+            <p class="section-subtitle reveal reveal-delay-1">الأسس اللي بنبني عليها كل طلب</p>
+            <div class="values-grid">
+                <div class="value-card reveal">
+                    <span class="value-icon">🎨</span>
+                    <h3>الإبداع</h3>
+                    <p>كل تصميم هو فرصة لإنشاء حاجة مميزة ومختلفة. بنشجع الأفكار الجديدة والتصاميم الخاصة.</p>
+                </div>
+                <div class="value-card reveal reveal-delay-1">
+                    <span class="value-icon">✨</span>
+                    <h3>الجودة</h3>
+                    <p>بنهتم بكل تفصيلة في عملية الطباعة والتنفيذ. الجودة مش خيار عندنا، هي الأساس.</p>
+                </div>
+                <div class="value-card reveal reveal-delay-2">
+                    <span class="value-icon">💚</span>
+                    <h3>رضا العميل</h3>
+                    <p>ما بنرتاحش غير لما العميل يكون راضي 100%. دعمنا مستمر من أول الطلب لحد الاستلام.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-bg-text">PRINT CUT CREATE</div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>جاهز تبدأ؟</h2>
+                <p>اكتشف منتجاتنا وابدأ طلبك دلوقتي.</p>
+                <a href="products.html" class="btn btn-accent btn-lg">تصفح المنتجات ←</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo"><div class="logo-icon">P&C</div> Print&Cut</div>
+                <p class="slogan">اطبع فكرتك... وخليها حقيقة.</p>
+            </div>
+            <div class="footer-col"><h4>SHOP</h4><ul><li><a href="products.html">المنتجات</a></li><li><a href="products.html?cat=mugs">مجات</a></li><li><a href="products.html?cat=stickers">استيكرات</a></li><li><a href="products.html?cat=frames">براويز</a></li></ul></div>
+            <div class="footer-col"><h4>COMPANY</h4><ul><li><a href="about.html">من نحن</a></li><li><a href="contact.html">تواصل معنا</a></li></ul></div>
+            <div class="footer-col"><h4>FOLLOW</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">TikTok</a></li></ul></div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Print&Cut. جميع الحقوق محفوظة.</p>
+            <p>صُنع بـ ♥ في مصر</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
